@@ -1,7 +1,9 @@
 .main {
   display: flex;
-  height: calc(100vh - 64px);
+  flex-direction: column;
+  width: calc(110vh - 60px);
   background-color: white;
+  margin-inline: auto;
 }
 
 .main > section {
