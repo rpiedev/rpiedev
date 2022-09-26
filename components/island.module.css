@@ -1,0 +1,30 @@
+.main {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.body {
+    background-color: #121212
+}
+.canvascont {
+    display:flex;
+    flex-direction: column;
+    background-color: #232222;
+    text-align: center;
+    border: 10px solid #373737;
+    color: white;
+    margin-top: 30px;
+}
+.header {
+    height: 50px;
+    width:auto;
+    background-color: #5a5a5a;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.inp {
+    margin:8px;
+    color:"white";
+    background-color: "white";
+}

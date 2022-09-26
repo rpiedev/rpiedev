@@ -1,11 +1,18 @@
 .main {
   display: flex;
   flex-direction: column;
-  width: calc(110vh - 60px);
+  width: calc(90vh - 60px);
+  min-width: 600px;
   background-color: white;
   margin-inline: auto;
 }
 
 .main > section {
   padding: 32px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+
+.main > section {
+  font-size:large;
 }

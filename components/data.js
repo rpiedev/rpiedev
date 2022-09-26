@@ -11,6 +11,7 @@ export const data = [
         notes: [
             {sees: "yourcalc", cligo: "/projects/yourcalc"}, 
             {sees: "Discord Bots", cligo: "/projects/bots"},
+            {sees: "Island Gen", cligo: "/projects/island"},
             {sees: "Ongoing", cligo: "/projects/ongoing"}
         ]
     },
