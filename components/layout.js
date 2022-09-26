@@ -10,7 +10,7 @@ export default function Layout({ children }) {
       <main className={styles.main}>{children}</main>
       <footer className={styles.foot}>
         <p>This site was made with React/Next.js and is hosted on a server in my friend's house.</p>
-        <p><b>VERY UNDER CONSTRUCTION!!</b></p>
+        <p><b>VERY UNDER CONSTRUCTION!! </b><a href="https://github.com/redassser">my github</a></p>
       </footer>
     </>
   )
