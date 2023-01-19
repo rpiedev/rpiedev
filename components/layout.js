@@ -5,13 +5,10 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
+        <meta name="viewport" content="width=device-width, user-scalable=no"/>
         <title>Ryan Pie</title>
       </Head>
       <main className={styles.main}>{children}</main>
-      <footer className={styles.foot}>
-        <p>This site was made with React/Next.js and is hosted on a server in my friend's house.</p>
-        <p><b>VERY UNDER CONSTRUCTION!! </b><a href="https://github.com/redassser">my github</a></p>
-      </footer>
     </>
   )
 }

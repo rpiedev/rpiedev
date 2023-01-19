@@ -1,20 +1,30 @@
 .maj {
-  display: flex;
-  flex-direction: row;
+  background: transparent;
   padding-left: 30px;
-  height:190px;
-  margin-top: 30px;
+  width: 700px;
+  min-height:190px;
   margin-right: 30px;
+  margin-top: 1rem;
+  position: absolute;
+  top: 10px;
+  z-index: 99;
 }
 
 .nav {
+  float: right;
   display: flex;
   flex-direction: column;
-  margin: auto;
   margin-top: 0;
-  border-left: 3px dotted #333;
-  border-right: 3px dotted #333;
+  width: 200px;
+  background-color: #fafcfc;
+  border-left: 2px solid #333;
+  border-right: 2px solid #333;
   border-bottom: 3px solid #333;
+}
+
+.img {
+  float: left;
+  max-width: 65%;
 }
 
 .nav > a {
@@ -30,12 +40,27 @@
 .accordion {
   font-size: 18px;
   font-weight: 700;  
-  background-color: #ffffff;
+  background-color: #fafcfc;
   border: 0;
   padding-inline: 30px;
   border-top: 3px solid #333;
 }
 
-.active, .accordion:hover {
+.active, .accordion:hover, .nav > a:hover {
   background-color: #c7c7c7;
+}
+
+@media(max-width: 700px) {
+  .maj {
+    width: 100%;
+    padding-left: 0;
+  }
+  .img {
+    float: none;
+    margin: auto;
+    margin-top: 4rem;
+  }
+  .nav {
+    visibility: hidden;
+  }
 }

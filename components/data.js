@@ -2,6 +2,7 @@ export const data = [
     {
         key: "MAIN",
         notes: [
+            {sees: "Main Page", cligo: "/main"},
             {sees: "Resume", cligo: "/main/resume"}, 
             {sees: "About Me", cligo: "/main/about"}
         ]
@@ -12,7 +13,8 @@ export const data = [
             {sees: "yourcalc", cligo: "/projects/yourcalc"}, 
             {sees: "Discord Bots", cligo: "/projects/bots"},
             {sees: "Island Gen", cligo: "/projects/island"},
-            {sees: "Ongoing", cligo: "/projects/ongoing"}
+            {sees: "Ongoing", cligo: "/projects/ongoing"},
+            {sees: "API", cligo: "/projects/api"}
         ]
     },
     {

@@ -13,7 +13,7 @@ export default function Sidebar() {
   }
   return (
     <span className={styles.maj}>
-      <Image className={styles.img} src={RYAN} objectFit="contain"/>
+      <div className={styles.img}><Image src={RYAN}/></div>
       <nav className={styles.nav}>
         {data.map((item,index)=> {
           return(
