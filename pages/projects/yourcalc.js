@@ -54,6 +54,7 @@ export default function Calculator({initialAns}) {
             hence "your calc". It didn't end up being that, I just became too busy with school to 
             continue obsessing and just left it as a project into tokenizing and parsing.
         </p>
+        <p><a target="_blank" href='https://github.com/redassser/yourcalc'>Github for this</a></p>
         <hr/>
       <div className={styles.mainbox}>
           <table className={styles.history}>
@@ -83,31 +84,31 @@ export default function Calculator({initialAns}) {
               <tbody>
                   <tr>
                       <td className={styles.button}><button className={styles.inp} onClick={evt => handleButton("+")}>+</button></td>
-                      <td className={styles.button} className={styles.number}><button className={styles.inp} onClick={evt => handleButton("1")}>1</button></td>
-                      <td className={styles.button} className={styles.number}><button className={styles.inp} onClick={evt => handleButton("2")}>2</button></td>
-                      <td className={styles.button} className={styles.number}><button className={styles.inp} onClick={evt => handleButton("3")}>3</button></td>
-                      <td className={styles.button} className={styles.equals}><button className={styles.inp} onClick={evt => handleButton("clr")}>clear</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("1")}>1</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("2")}>2</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("3")}>3</button></td>
+                      <td className={[styles.button, styles.equals].join(" ")}><button className={styles.inp} onClick={evt => handleButton("clr")}>clear</button></td>
                   </tr>
                   <tr>
                       <td className={styles.button}><button className={styles.inp} onClick={evt => handleButton("-")}>-</button></td>
-                      <td className={styles.button} className={styles.number}><button className={styles.inp} onClick={evt => handleButton("4")}>4</button></td>
-                      <td className={styles.button} className={styles.number}><button className={styles.inp} onClick={evt => handleButton("5")}>5</button></td>
-                      <td className={styles.button} className={styles.number}><button className={styles.inp} onClick={evt => handleButton("6")}>6</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("4")}>4</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("5")}>5</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("6")}>6</button></td>
                       <td className={styles.button}><button className={styles.inp} onClick={evt => handleButton("(")}>(</button></td>
                   </tr>
                   <tr>
                       <td className={styles.button}><button className={styles.inp} onClick={evt => handleButton("*")}>×</button></td>
-                      <td className={styles.button} className={styles.number}><button className={styles.inp} onClick={evt => handleButton("7")}>7</button></td>
-                      <td className={styles.button} className={styles.number}><button className={styles.inp} onClick={evt => handleButton("8")}>8</button></td>
-                      <td className={styles.button} className={styles.number}><button className={styles.inp} onClick={evt => handleButton("9")}>9</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("7")}>7</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("8")}>8</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("9")}>9</button></td>
                       <td className={styles.button}><button className={styles.inp} onClick={evt => handleButton(")")}>)</button></td>
                   </tr>
                   <tr className={styles.options}>
                       <td className={styles.button}><button className={styles.inp} onClick={evt => handleButton("/")}>÷</button></td>
                       <td className={styles.button}><button className={styles.inp} onClick={evt => handleButton("p")}>π</button></td>
-                      <td className={styles.button} className={styles.number}><button className={styles.inp} onClick={evt => handleButton("0")}>0</button></td>
-                      <td className={styles.button} className={styles.equals}><button className={styles.inp} onClick={evt => handleButton("a")}>ans</button></td>
-                      <td className={styles.button} className={styles.equals}><button className={styles.inp} onClick={evt => handleSub()}>=</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("0")}>0</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleButton("a")}>ans</button></td>
+                      <td className={[styles.button, styles.number].join(" ")}><button className={styles.inp} onClick={evt => handleSub()}>=</button></td>
                   </tr>
                   <tr className={styles.options}>
                       <td className={styles.button}><button className={styles.inp} onClick={evt => handleButton("s")}>sin</button></td>
