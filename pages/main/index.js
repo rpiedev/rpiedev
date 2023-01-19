@@ -9,6 +9,7 @@ import one from "../../components/yourcalc.png"
 import two from "../../components/discordbots.png"
 import three from "../../components/aboutme.png"
 import four from "../../components/github.png"
+import five from "../../components/api.png"
 
 export default function Main() {
     return (
@@ -24,6 +25,9 @@ export default function Main() {
         </div>
         <div className={styles.container}>
           <a target="_blank" href="https://github.com/redassser"><Image className={styles.image} src={four}></Image></a>
+        </div>
+        <div className={styles.container}>
+          <Link href="/projects/api"><Image className={styles.image} src={five}></Image></Link>
         </div>
       </div>
     )
