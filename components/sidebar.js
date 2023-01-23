@@ -18,7 +18,7 @@ export default function Sidebar() {
         {data.map((item,index)=> {
           return(
             <>
-              <button onClick={()=>toggle(index)} key={index} style={open===index ? {"background-color":"#c7c7c7"} : null} className={styles.accordion}>{item.key}</button>
+              <button onClick={()=>toggle(index)} key={index} style={open===index ? {"background-color":"#c7c7c7", "color":"black"} : null} className={styles.accordion}>{item.key}</button>
               {item.notes.map((subitem, subindex)=> {
                 return (<>{open===index ? <Link href={subitem.cligo} key={subindex} ><a>{subitem.sees}</a></Link> : null}</>)
               })}

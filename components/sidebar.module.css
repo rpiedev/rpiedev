@@ -16,10 +16,10 @@
   flex-direction: column;
   margin-top: 0;
   width: 200px;
-  background-color: #fafcfc;
-  border-left: 2px solid #333;
-  border-right: 2px solid #333;
-  border-bottom: 3px solid #333;
+  background-color: #272527;
+  border-left: 2px solid #edd93c;
+  border-right: 2px solid #edd93c;
+  border-bottom: 3px solid #edd93c;
 }
 
 .img {
@@ -33,21 +33,22 @@
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.075em;
-  color: #333;
+  color: white;
   transition: all 0.125s ease;
 }
 
 .accordion {
   font-size: 18px;
-  font-weight: 700;  
-  background-color: #fafcfc;
+  font-weight: 600;  
+  background-color: #161516;
   border: 0;
   padding-inline: 30px;
-  border-top: 3px solid #333;
+  border-top: 3px solid #edd93c;
+  color: white;
 }
 
 .active, .accordion:hover, .nav > a:hover {
-  background-color: #c7c7c7;
+  color: #edd93c;
 }
 
 @media(max-width: 700px) {
