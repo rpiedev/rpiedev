@@ -1,11 +1,8 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
-    async redirects() {
-      return [
-        {
-          source: '/',
-          destination: '/main',
-          permanent: true,
-        },
-      ]
-    },
+  assetPrefix: isProd ? '/rpiedev/' : '',
+  images: {
+    unoptimized: true,
   }
+}
