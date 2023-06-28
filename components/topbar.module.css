@@ -1,0 +1,16 @@
+.cont{
+    width:100%;
+    height: .8rem;
+    background: linear-gradient(to right, #e84f36, #fbb900,#ffee01,#65b33d,#34312d 30%,#34312d 70%,#65b33d,#00aae5,#3c4395,#6b4795);
+    position: absolute;
+}
+.opts{
+    margin: auto;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+}
+.opt {
+    color: white;
+    text-decoration: none;
+}

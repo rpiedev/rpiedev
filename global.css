@@ -1,14 +1,16 @@
 #__next {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  height: 100%;
 }
 
-body {
+html{
+  background-color: #14110f;
+}
+
+html, body {
   margin: 0;
-  color: white;
+  height: 100%;
   font-size: 24px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    background-image: url("./components/tile.png");
+  scrollbar-width: none;
 }

@@ -1,0 +1,89 @@
+.ct {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    align-self: center;
+}
+
+.ti {
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    width: 100%;
+    height: 200px;
+    min-height: 100px;
+    color: #fff;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.ti::before, .ti::after {
+    transform: translate3d(0, 0, 0);
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+}
+.ti:hover {
+    height: 900px !important;
+}
+.ti:hover::after{
+    opacity: 0;
+}
+.ti:hover::before{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+.ti:hover .tc {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ti::after {
+    background: white;
+    content: '';
+    width: 6px;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.tc {
+    transform: translate3d(0, 0, 0) translateY(0px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 0;
+    opacity: 0;
+}
+.ty {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+.ty::after {
+    background: white;
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.ti:hover .ty {
+    opacity: 0;
+}
+.ty p {
+    position: absolute;
+    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: white;
+    border-top: #fff 2px solid;
+    border-bottom: #fff 2px solid;
+    height: fit-content;
+    padding: 7px 10px;
+    padding-bottom: 0;
+    margin: 0px 30px;
+    font-size: 1.728rem;
+}

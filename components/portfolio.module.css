@@ -1,0 +1,157 @@
+.bg {
+    position: absolute;
+    background: linear-gradient(to bottom, #34312d 18rem, #14110f -18rem);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+.topHalf{
+    height: 18rem;
+    flex-shrink: 0;
+}
+.links{
+    background-color: #d9c5b2;
+    position: absolute;
+    top: 16.8rem;
+    padding: .3rem;
+    max-width: 60%;
+    display: flex;
+    align-self: center;
+    gap: .3rem;
+}
+.mebg {
+    position: absolute;
+    margin-top: 2rem;
+    align-self: center;
+    background-color:#d9c5b2;
+    width: 10rem;
+    border-radius: 25%;
+    height: 10rem;
+}
+.mee {
+    position: absolute;
+    padding-left: 30px;
+    width: 600px;
+    align-self: center;
+}
+.linkimage{
+    position:relative;
+    background-color: darkgray;
+    padding: .3rem;
+    width:2rem;
+    height:2rem;
+}
+.linkimage:hover {
+    transform: scale(1.1); 
+    transition-duration: .1s;
+}
+.bottomHalf{
+    display: flex;
+    margin: 1.6rem 0;
+}
+.projects{
+    width: 17rem;
+    flex-shrink: 0;
+}
+.projimg{
+    position: relative;
+    width: 5.2rem;
+}
+.parrow{
+    width: 1.5rem;
+    height: 1.2rem;
+    align-self: center;
+    position: absolute;
+    margin-left: 15rem;
+    transition: transform 1s ease-out;
+}
+.parrow:hover{
+    transform: translateX(10px);
+}
+.projHead{
+    display: flex;
+    height: 3rem;
+}
+.projText {
+    color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: .15rem;
+}
+.projName{
+    font-size: larger;
+}
+.projSub{
+    font-size: medium;
+    color: darkgrey;
+}
+.proj{
+    margin: .3rem 0;
+    max-height: 3rem;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+.projActive {
+    background-color: grey;
+}
+.proj:hover {
+    max-height: 300px;
+    transition: max-height .5s ease-in;
+}
+.proj:hover .projContent {
+    opacity: 1;
+}
+.projContent{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 0;
+    font-size: small;
+}
+
+.phr{
+    background:linear-gradient(to right, #e84f36, #fbb900,#ffee01,#65b33d,#00aae5,#3c4395,#6b4795, transparent);
+    border: 0;
+    height:.07rem;
+}
+
+.screen {
+    background-color: #34312d;
+    margin: 1.2rem;
+    flex-grow: 1;
+    height: 23.4rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.screenbg {
+    background:linear-gradient(to bottom, #14110f, transparent 10%, transparent 90%, #14110f);
+    padding: 30px;  
+    min-height: 28rem;
+}
+.screen p {
+    font-size: large;
+    font-weight: 500;
+    color: aliceblue;
+}
+.screen h3 {
+    color:aliceblue;
+}
+.screen p span {
+    font-weight: bold;
+}
+.screenimg {
+    margin: .5rem;
+    margin-right: 0;
+    float: right;
+    border-radius: 4%;
+    box-shadow: 7px 12px 4px rgb(34, 34, 34);
+}

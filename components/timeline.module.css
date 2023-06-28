@@ -1,0 +1,43 @@
+.bg {
+    font-family: monospace;
+    color: aliceblue;
+}
+.ul {
+    padding: 0;
+    margin-top: 0;
+}
+.li {
+    position: relative;
+    list-style-type: none;
+    width: 6px;
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.li::after {
+    background: white;
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.ct {
+    position: relative;
+    bottom: 0;
+}
+.ul li:nth-child(odd) div {
+    left: 45px;
+}
+.ul li:nth-child(even) div {
+    left: -345px;
+}
+.ti {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
