@@ -43,6 +43,7 @@
     position: absolute;
     margin-top: 10px;
     width: 400px;
+    height: 420px;
     align-self: center;
 }
 .linkimage{
@@ -191,5 +192,92 @@
         float: unset;
         margin: auto;
         margin: 0;
+    }
+}
+@media (max-width:400px) {
+    .bg {
+        background: linear-gradient(to bottom, #34312d 9rem, #14110f -9rem);
+    }
+    .mebg {
+        position: absolute;
+        margin-top: 2rem;
+        align-self: center;
+        background-color:#d9c5b2;
+        width: 5rem;
+        border-radius: 25%;
+        height: 5rem;
+    }
+    .mee {
+        width: 200px;
+        height: 210px;
+        align-self: center;
+    }
+    .topHalf {
+        height: 9rem;
+    }
+    .projimg{
+        position: relative;
+        width: 5.2rem;
+        flex-shrink: 0;
+    }
+    .linkimage {
+        width: .6rem;
+        height: .6rem;
+    }
+    .projects {
+        min-width: 100%;
+    }
+    .proj {
+        width: 100%;
+    }
+    .projName{
+        font-size: large;
+        min-width: 7.5rem;
+    }
+    .projSub{
+        font-size: x-small;
+        color: darkgrey;
+    }
+    .projContent{
+        font-size: x-small;
+    }
+    .parrow {
+        display: none;
+    }
+    .screen {
+        text-align: center;
+        max-width: 17.3rem;
+    }
+    .screenimg {
+        float: unset;
+        margin: auto;
+        margin: 0;
+    }
+    .links{
+        padding: .1rem;
+        width: fit-content;
+        display: flex;
+        align-self: center;
+        gap: .1rem;
+        transform: translateY(-50%);
+    }
+    .screen p {
+        font-size: small;
+        font-weight: 500;
+        color: aliceblue;
+    }
+    .screen h3 {
+        font-size: large;
+        color:aliceblue;
+    }
+    .screen p span {
+        font-weight: bold;
+    }
+    .screenimg {
+        margin: .5rem;
+        margin-right: 0;
+        float: right;
+        border-radius: 4%;
+        box-shadow: 7px 12px 4px rgb(34, 34, 34);
     }
 }

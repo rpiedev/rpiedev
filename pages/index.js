@@ -90,7 +90,7 @@ export default function portfolio() {
   projects.forEach(element => {
     var proj = <li key={element.name} className={s.proj}>
                 <div className={s.projHead}>
-                  <div className={s.projimg}><Image src={element.img} fill={true} sizes='600px' alt={"Image of"+element.name} /></div>
+                  <div className={s.projimg}><Image src={element.img} fill={true} sizes='(max-width:400px) 200px, 600px' alt={"Image of"+element.name} /></div>
                   <div className={s.projText}>
                     <div className={s.projName}>{element.name}</div>
                     <div className={s.projSub}>{element.sub}</div>
@@ -110,7 +110,7 @@ export default function portfolio() {
         <div className={s.topHalf}>
         </div>
         <div className={s.mebg}></div>
-        <div className={s.mee}><Image src={me} width={400}/></div>
+        <div className={s.mee}><Image src={me} fill={true} sizes='(max-width: 400px) 200px, 400px'/></div>
         <div className={s.links}>
           <a className={s.linkimage} style={{backgroundColor:"#e84f36"}} href="https://redassser.itch.io/" target='_blank'><Image src={itchimage} fill={true} sizes='5.2rem'/></a>
           <a className={s.linkimage} style={{backgroundColor:"#fbb900"}} href="/Ryan_Piedrahita_Resume.pdf" target="_blank"><Image src={resimage} fill={true} sizes='5.2rem'/></a>
@@ -160,7 +160,7 @@ const screenbots = <div className={s.screenbg}>
           </div>
 const screenme = <div className={s.screenbg}>
             <h3>Where I Come From</h3>
-            <Image className={s.screenimg} width={340} src={mewny} alt="Intersection on Bergenline in WNY. Used to be Gamestop"/>
+            <div><Image className={s.screenimg} width={340} src={mewny} alt="Intersection on Bergenline in WNY. Used to be Gamestop"/></div>
             <p>
               I am a Colombian-American from West New York, NJ, a desnsely populated town across the hudson river from New York City. The town is nearly entirely hispanic 
               and majority immigrant. Being so close to NYC is a blessing and a curse, but I love this this town and community.
