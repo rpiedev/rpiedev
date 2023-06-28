@@ -5,7 +5,7 @@ import { useState } from 'react'
 import s from "../components/portfolio.module.css"
 import t from "../components/topbar.module.css"
 
-import me from "../components/me(1).png"
+import me from "../components/me(1)(1).png"
 import arrow from "../components/arrow(3).png"
 
 import projdisc from "../components/projicondisc.png"
@@ -110,11 +110,11 @@ export default function portfolio() {
         <div className={s.topHalf}>
         </div>
         <div className={s.mebg}></div>
-        <div className={s.mee}><Image src={me} width={600}/></div>
+        <div className={s.mee}><Image src={me} width={400}/></div>
         <div className={s.links}>
           <a className={s.linkimage} style={{backgroundColor:"#e84f36"}} href="https://redassser.itch.io/" target='_blank'><Image src={itchimage} fill={true} sizes='5.2rem'/></a>
           <a className={s.linkimage} style={{backgroundColor:"#fbb900"}} href="/Ryan_Piedrahita_Resume.pdf" target="_blank"><Image src={resimage} fill={true} sizes='5.2rem'/></a>
-          <a className={s.linkimage} style={{backgroundColor:"#ffee01"}} href="mailto:rpiedrah@stevens.edu"><Image src={mailimage} fill={true} sizes='5.2rem'/></a>
+          <a className={s.linkimage} style={{backgroundColor:"#ddce02"}} href="mailto:rpiedrah@stevens.edu"><Image src={mailimage} fill={true} sizes='5.2rem'/></a>
           <a className={s.linkimage} style={{backgroundColor:"#65b33d"}} href="https://mcpedl.com/user/renegades/" target='_blank'><Image src={dlimage} fill={true} sizes='5.2rem'/></a>
           <a className={s.linkimage} style={{backgroundColor:"#00aae5"}} href="https://discordapp.com/users/265953906951979019" target='_blank'><Image src={discimage} fill={true} sizes='5.2rem'/></a>
           <a className={s.linkimage} style={{backgroundColor:"#3c4395"}} href="https://www.linkedin.com/in/ryanpie/" target='_blank'><Image src={liimage} fill={true} sizes='5.2rem'/></a>
@@ -160,7 +160,7 @@ const screenbots = <div className={s.screenbg}>
           </div>
 const screenme = <div className={s.screenbg}>
             <h3>Where I Come From</h3>
-            <div><Image className={s.screenimg} width={340} src={mewny} alt="Intersection on Bergenline in WNY. Used to be Gamestop"/></div>
+            <Image className={s.screenimg} width={340} src={mewny} alt="Intersection on Bergenline in WNY. Used to be Gamestop"/>
             <p>
               I am a Colombian-American from West New York, NJ, a desnsely populated town across the hudson river from New York City. The town is nearly entirely hispanic 
               and majority immigrant. Being so close to NYC is a blessing and a curse, but I love this this town and community.

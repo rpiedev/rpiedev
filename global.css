@@ -14,3 +14,6 @@ html, body {
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   scrollbar-width: none;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
