@@ -25,11 +25,11 @@ import resimage from "../components/linkiconres.png"
 import aboutpoll from "../components/pollframe(1).png"
 import mewny from "../components/wnyintersection.jpg"
 import pizzajes from "../components/pizzajesus.jpg"
-import discvc from "../components/discordautovc.PNG"
-import boll from "../components/boll.jpg"
-import box from "../components/unitybox.PNG"
-import float from "../components/float.PNG"
-import asm from "../components/asm.PNG"
+import discvc from "../components/discordautovc.png"
+import boll from "../components/boll.png"
+import box from "../components/unitybox.png"
+import float from "../components/float.png"
+import asm from "../components/asm.png"
 
 
 function topBar() {
