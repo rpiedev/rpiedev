@@ -99,6 +99,9 @@ export default function portfolio() {
       case "Discord Bots":
         screenContentChange(screenbots);
         break;
+      case "MC Mods":
+        screenContentChange(screenmc);
+        break;
     }
   }
   var projectList = [];
@@ -243,5 +246,13 @@ const screenidoc = <div className={s.screenbg}>
             <p>
               One of Dov Kruger's research projects was <a href='https://github.com/StevensDeptECE/InteractiveDocument'>Interactive Document</a>, a Markdown alternative
               that includes interactive, animated, and more complex elements without sacrificing the simplicity of Markdown. 
+            </p>
+          </div>
+const screenmc = <div className={s.screenbg}>
+            <h3>Minecraft Bedrock</h3>
+            <p>
+              You simply would not believe how unintuative and obtuse it is to make mods for Minecraft bedrock, but it happens to be the Minecraft version of choice for my
+              friends and I to play on occasionally. So, whenever one of us gets an idea like magic spells we can use, a new animal we want to see or the ability to ride 
+              a wheelchair, we just try and do it. 
             </p>
           </div>

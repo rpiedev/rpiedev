@@ -43,7 +43,7 @@
     position: absolute;
     margin-top: 10px;
     width: 400px;
-    height: 420px;
+    height: 400px;
     align-self: center;
 }
 .linkimage{
@@ -115,6 +115,7 @@
 .proj:hover {
     max-height: 5.4rem;
     transition: max-height .2s ease-in;
+    cursor: pointer;
 }
 .proj:hover .projContent {
     opacity: 1;
@@ -191,10 +192,13 @@
         text-align: center;
         max-width: 17.3rem;
     }
+    .screenbg {
+        display: flex;
+        flex-direction: column;
+    }
     .screenimg {
         float: unset;
         margin: auto;
-        margin: 0;
     }
 }
 @media (max-width:400px) {
@@ -251,10 +255,9 @@
         text-align: center;
         max-width: 17.3rem;
     }
-    .screenimg {
-        float: unset;
-        margin: auto;
-        margin: 0;
+    .screenbg {
+        display: flex;
+        flex-direction: column;
     }
     .links{
         padding: .1rem;
@@ -275,12 +278,5 @@
     }
     .screen p span {
         font-weight: bold;
-    }
-    .screenimg {
-        margin: .5rem;
-        margin-right: 0;
-        float: right;
-        border-radius: 4%;
-        box-shadow: 7px 12px 4px rgb(34, 34, 34);
     }
 }
