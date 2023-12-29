@@ -50,13 +50,13 @@ const projects = {
   "IDOC": {
     short: "A research project of Professor Dov Kruger.",
     desc: "A research project of Professor Dov Kruger. I helped a team of a few simplify the front end via creating a standard and webpacking for backend.",
-    tech: ["JavaScript", "Node.js", "Webpacker", "Team Lead"],
+    tech: ["JavaScript", "Node.js", "Webpacker"],
     thumbnail: iconidoc,
     links: {
-      "Sim": "https://redassser.github.io/ASM/"
     }
   },
   "Unity Games": {
+    short: "Unity",
     desc: "I get an idea and I want to see it done, so I do it in Unity. Simple stuff I make with or for friends.",
     tech: ["Unity", "C#", "Application"],
     thumbnail: iconunity,
@@ -77,16 +77,8 @@ export default function portfolio() {
   }
   return (
     <>
-      <div style={{position:"absolute", overflow:"hidden", zIndex:"-1", width:"100%", height:"100%", backgroundColor:"#14110f"}}></div>
-      <ul style={{
-        margin: "auto",
-        marginTop: "1rem",
-        marginBottom: "2rem",
-        minWidth: "40%", 
-        maxWidth: "30rem",
-        listStyle: "none",
-        padding: "1rem"
-      }}>
+      <div className={s.bg}></div>
+      <ul className={s.mainul}>
         {divarray}
       </ul>
     </>
@@ -95,27 +87,27 @@ export default function portfolio() {
 function project(key, element) {
   var linkarray = [];
   var techarray = [];
-  for (const key in element.links) {
-    if (Object.hasOwnProperty.call(element.links, key)) {
-      const link = element.links[key];
-      linkarray.push(<li className={s.li}><a target="_blank" className={s.a} href={link}>{key}</a></li>)
+  for (const keyh in element.links) {
+    if (Object.hasOwnProperty.call(element.links, keyh)) {
+      const link = element.links[keyh];
+      linkarray.push(<li className={s.li} key={keyh}><a target="_blank" className={s.a} href={link}>{keyh}</a></li>)
     }
   }
   element.tech.forEach(tech => {
-    techarray.push(<li className={s.li}>{tech}</li>)
+    techarray.push(<li className={s.li} key={tech}>{tech}</li>)
   });
   return (
     <>
       <hr/>
-      <li style={{width:"100%", height:"5.5rem", display:"flex", justifyContent:"space-between", alignItems: "center"}}>
+      <li key={key} className={s.mainli}>
         <div id="text" style={{ color: "white", fontSize: ".6rem", width: "60%" }}>
         <ul className={s.ul} style={{color:"grey"}}>{techarray}</ul>
         <h3 style={{marginTop:".1rem"}}>{key + " "}</h3>
         <p>{element.desc}</p>
         <ul className={s.ul} height="1rem">{linkarray}</ul>
       </div>
-      <div id="thumbnail" style={{height:"4.5rem", width:"8rem", float:"right", position:"relative"}} >
-        <Image src={element.thumbnail} fill={true}></Image>
+      <div className={s.thumbnail} >
+        <Image src={element.thumbnail} fill={true} alt={element.short}></Image>
       </div>
       </li>
     </>
