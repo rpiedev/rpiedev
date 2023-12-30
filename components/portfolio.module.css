@@ -14,7 +14,7 @@
 }
 .mainul {
     margin: auto;
-    margin-top: 1rem;
+    margin-top: .1rem;
     margin-bottom: 2rem;
     max-width: 30rem;
     min-width: 40%;
@@ -24,14 +24,14 @@
 }
 .mainli {
     width:100%; 
-    height:5.5rem; 
     display:flex; 
     justify-content:space-between; 
     align-items:center;
 }
-@media only screen and (max-width: 600px) {
-    .mainli {
-       height:6.5rem;
+@media only screen and (max-width: 50rem) {
+    .mainul {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -44,8 +44,8 @@
 
 .ul {
     list-style: none;
+    overflow: auto;
     padding-left: 0;
-    overflow: hidden;
 }
 .li {
     float: left;

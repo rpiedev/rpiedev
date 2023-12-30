@@ -78,6 +78,7 @@ export default function portfolio() {
   return (
     <>
       <div className={s.bg}></div>
+      <div style={{ position: "static", color: "whitesmoke", width: "100%", textAlign: "center", fontSize: ".6rem" }}>The Things of <a className={s.a} href="/Ryan_Piedrahita_Resume.pdf" target="_blank">Ryan Piedrahita</a> (some of them)</div>
       <ul className={s.mainul}>
         {divarray}
       </ul>
@@ -98,17 +99,17 @@ function project(key, element) {
   });
   return (
     <>
-      <hr/>
+      <hr style={{margin:0}}/>
       <li key={key} className={s.mainli}>
         <div id="text" style={{ color: "white", fontSize: ".6rem", width: "60%" }}>
-        <ul className={s.ul} style={{color:"grey"}}>{techarray}</ul>
-        <h3 style={{marginTop:".1rem"}}>{key + " "}</h3>
-        <p>{element.desc}</p>
-        <ul className={s.ul} height="1rem">{linkarray}</ul>
-      </div>
-      <div className={s.thumbnail} >
-        <Image src={element.thumbnail} fill={true} alt={element.short}></Image>
-      </div>
+          <ul className={s.ul} style={{color:"grey", height:".8rem", marginTop:"0rem"}}>{techarray}</ul>
+          <h3 style={{marginTop:".1rem",marginBottom:0}}>{key + " "}</h3>
+          <p style={{marginTop:".1rem"}}>{element.desc}</p>
+          <ul className={s.ul} style={{marginBottom:".1rem"}}>{linkarray}</ul>
+        </div>
+        <div className={s.thumbnail} style={{flexShrink:"0", marginLeft:".4rem", borderRadius:".1rem", overflow:"hidden"}}>
+          <Image src={element.thumbnail} fill={true} alt={element.short}></Image>
+        </div>
       </li>
     </>
   )
