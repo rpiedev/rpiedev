@@ -8,8 +8,18 @@ import iconpong from "../components/projiconpong.png"
 import iconidoc from "../components/projiconidoc.png"
 import iconunity from "../components/projiconunity.png"
 import iconrd from "../components/projiconrd.png"
+import iconat from "../components/projiconat.png"
 
 const projects = {
+  "Pulse Reader": {
+    short: "",
+    desc: "Used an attiny85, pulse sensor, battery and 7 segment display all in a little brass housing as a mobile BPM reader.",
+    tech: ["C", "C++", "Arduino", "Soldering", "Design"],
+    thumbnail: iconat,
+    links: {
+      "Source and Images": "https://github.com/redassser/ATtiny85" 
+    }
+  },
   "Randomroll": {
     short: "",
     desc: "An easy to use webapp that could execute complex functions that involved common dice terminology.",
