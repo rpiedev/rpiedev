@@ -7,10 +7,21 @@ import icontetris from "../components/projicontetris.png"
 import iconpong from "../components/projiconpong.png"
 import iconidoc from "../components/projiconidoc.png"
 import iconunity from "../components/projiconunity.png"
+import iconrd from "../components/projiconrd.png"
 
 const projects = {
+  "Randomroll": {
+    short: "",
+    desc: "An easy to use webapp that could execute complex functions that involved common dice terminology.",
+    tech: ["Angular", "TypeScript"],
+    thumbnail: iconrd,
+    links: {
+      "Source": "https://github.com/redassser/randomroll",
+      "Prototype": "https://redassser.github.io/randomroll/"
+    }
+  },
   "Game Mods": {
-    short: "Open source mods with 2M+ Downloads",
+    short: "Open source mods with 4.5M Downloads",
     desc: "Mods for the game Lethal Company. Game code analyzed in dotPeek and patched using Harmony with BepInEx. Over 2 Million combined downloads.",
     tech: ["C#", "dotPeek", "Unity", "BepInEx", "Harmony"],
     thumbnail: iconlethal,
