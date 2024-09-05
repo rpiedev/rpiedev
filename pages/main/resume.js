@@ -19,8 +19,8 @@ export default function About() {
         <h3>Projects</h3> <hr/>
         <h4>yourcalc.net</h4>
         <p>
-            <a href="https://github.com/redassser/yourcalc">
-                github.com/redassser/yourcalc
+            <a href="https://github.com/rrpie/yourcalc">
+                github.com/rrpie/yourcalc
             </a> 
             * 
             <a href="http://yourcalc.net">
@@ -43,8 +43,8 @@ export default function About() {
         </ul>
         <h4>autovc</h4>
         <p>
-            <a href="https://github.com/redassser/yourcalc">
-                github.com/redassser/autovc
+            <a href="https://github.com/rrpie/yourcalc">
+                github.com/rrpie/autovc
             </a> 
             * 
             <a href="https://top.gg/bot/775891705270239263">

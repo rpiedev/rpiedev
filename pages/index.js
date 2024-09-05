@@ -11,13 +11,28 @@ import iconrd from "../components/projiconrd.png"
 import iconat from "../components/projiconat.png"
 
 const projects = {
+  "MIPS": {
+    short: "",
+    desc: "Senior Design project that may evolve past that. Educational tool to learn programming in a way that is physical and practical.",
+    tech: ["N/A"],
+    thumbnail: "",
+    links: {
+    }
+  },
+  "MaterialsVR": {
+    short: "",
+    desc: "VR Educational tool",
+    tech: ["C#", "Unity"],
+    thumbnail: "",
+    links: {}
+  },
   "Pulse Reader": {
     short: "",
     desc: "Used an attiny85, pulse sensor, battery and 7 segment display all in a little brass housing as a mobile BPM reader.",
     tech: ["C", "C++", "Arduino", "Soldering", "Design"],
     thumbnail: iconat,
     links: {
-      "Source and Images": "https://github.com/redassser/ATtiny85" 
+      "Source and Images": "https://github.com/rrpie/ATtiny85" 
     }
   },
   "Randomroll": {
@@ -26,8 +41,8 @@ const projects = {
     tech: ["Angular", "TypeScript"],
     thumbnail: iconrd,
     links: {
-      "Source": "https://github.com/redassser/randomroll",
-      "Prototype": "https://redassser.github.io/randomroll/"
+      "Source": "https://github.com/rrpie/randomroll",
+      "Prototype": "https://rrpie.github.io/randomroll/"
     }
   },
   "Game Mods": {
@@ -36,7 +51,7 @@ const projects = {
     tech: ["C#", "dotPeek", "Unity", "BepInEx", "Harmony"],
     thumbnail: iconlethal,
     links: {
-      "Source": "https://github.com/redassser/Lc-Flashlight",
+      "Source": "https://github.com/rrpie/Lc-Flashlight",
       "Public": "https://thunderstore.io/c/lethal-company/p/Renegades/FlashlightToggle/"
     }
   },
@@ -55,8 +70,8 @@ const projects = {
     tech: ["JavaScript", "React", "Node.js", "Assembler"],
     thumbnail: iconasm,
     links: {
-      "Source": "https://github.com/redassser/ASM",
-      "Sim": "https://redassser.github.io/ASM/"
+      "Source": "https://github.com/rrpie/ASM",
+      "Sim": "https://rrpie.github.io/ASM/"
     }
   },
   "Pong VHDL": {
@@ -65,7 +80,7 @@ const projects = {
     tech: ["VHDL", "Graphics"],
     thumbnail: iconpong,
     links: {
-      "Source": "https://github.com/redassser/487Final"
+      "Source": "https://github.com/rrpie/487Final"
     }
   },
   "IDOC": {
