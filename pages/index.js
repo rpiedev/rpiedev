@@ -9,22 +9,26 @@ import iconidoc from "../components/projiconidoc.png"
 import iconunity from "../components/projiconunity.png"
 import iconrd from "../components/projiconrd.png"
 import iconat from "../components/projiconat.png"
+import iconmips from "../components/projiconmips.png"
+import iconmat from "../components/projiconmat.png"
 
 const projects = {
   "MIPS": {
     short: "",
     desc: "Senior Design project that may evolve past that. Educational tool to learn programming in a way that is physical and practical.",
     tech: ["N/A"],
-    thumbnail: "",
+    thumbnail: iconmips,
     links: {
     }
   },
   "MaterialsVR": {
     short: "",
     desc: "VR Educational tool",
-    tech: ["C#", "Unity"],
-    thumbnail: "",
-    links: {}
+    tech: ["C#", "Unity", "Management"],
+    thumbnail: iconmat,
+    links: {
+      "Source": "https://github.com/rrpie/MaterialsVR"
+    }
   },
   "Pulse Reader": {
     short: "",
