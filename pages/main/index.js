@@ -50,7 +50,7 @@ function Timeline() {
               </li>
               <li className={s.li}>
                 <div className={[styles.container, s.ct].join(" ")}>
-                <a target="_blank" href="https://github.com/rrpie"><Image className={styles.image} src={four}></Image></a>
+                <a target="_blank" href="https://github.com/rpiedev"><Image className={styles.image} src={four}></Image></a>
                 </div>
               </li>
             </ul>

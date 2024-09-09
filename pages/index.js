@@ -27,7 +27,7 @@ const projects = {
     tech: ["C#", "Unity", "Management"],
     thumbnail: iconmat,
     links: {
-      "Source": "https://github.com/rrpie/MaterialsVR"
+      "Source": "https://github.com/rpiedev/MaterialsVR"
     }
   },
   "Pulse Reader": {
@@ -36,7 +36,7 @@ const projects = {
     tech: ["C", "C++", "Arduino", "Soldering", "Design"],
     thumbnail: iconat,
     links: {
-      "Source and Images": "https://github.com/rrpie/ATtiny85" 
+      "Source and Images": "https://github.com/rpiedev/ATtiny85" 
     }
   },
   "Randomroll": {
@@ -45,8 +45,8 @@ const projects = {
     tech: ["Angular", "TypeScript"],
     thumbnail: iconrd,
     links: {
-      "Source": "https://github.com/rrpie/randomroll",
-      "Prototype": "https://rrpie.github.io/randomroll/"
+      "Source": "https://github.com/rpiedev/randomroll",
+      "Prototype": "https://rpiedev.github.io/randomroll/"
     }
   },
   "Game Mods": {
@@ -55,7 +55,7 @@ const projects = {
     tech: ["C#", "dotPeek", "Unity", "BepInEx", "Harmony"],
     thumbnail: iconlethal,
     links: {
-      "Source": "https://github.com/rrpie/Lc-Flashlight",
+      "Source": "https://github.com/rpiedev/Lc-Flashlight",
       "Public": "https://thunderstore.io/c/lethal-company/p/Renegades/FlashlightToggle/"
     }
   },
@@ -74,8 +74,8 @@ const projects = {
     tech: ["JavaScript", "React", "Node.js", "Assembler"],
     thumbnail: iconasm,
     links: {
-      "Source": "https://github.com/rrpie/ASM",
-      "Sim": "https://rrpie.github.io/ASM/"
+      "Source": "https://github.com/rpiedev/ASM",
+      "Sim": "https://rpiedev.github.io/ASM/"
     }
   },
   "Pong VHDL": {
@@ -84,7 +84,7 @@ const projects = {
     tech: ["VHDL", "Graphics"],
     thumbnail: iconpong,
     links: {
-      "Source": "https://github.com/rrpie/487Final"
+      "Source": "https://github.com/rpiedev/487Final"
     }
   },
   "IDOC": {
@@ -118,7 +118,7 @@ export default function portfolio() {
   return (
     <>
       <div className={s.bg}></div>
-      <div style={{ position: "static", color: "whitesmoke", width: "100%", textAlign: "center", fontSize: ".6rem" }}>The Things of <a className={s.a} href="/Ryan_Piedrahita_Resume.pdf" target="_blank">Ryan Piedrahita</a> (some of them)</div>
+      <div style={{ position: "static", color: "whitesmoke", width: "100%", textAlign: "center", fontSize: ".6rem" }}>The Things of <a className={s.a} href="/Ryan_Piedrahita_Resume.pdf" target="_blank">Ryan Piedrahita</a> (some of them) | <a href="https://twitter.com/rpiedev" target="_blank">Twitter</a> | <a href="https://github.com/rpiedev" target="_blank">GitHub</a></div>
       <ul className={s.mainul}>
         {divarray}
       </ul>

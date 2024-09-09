@@ -11,7 +11,7 @@ export default function About() {
       </p>
         <a target="_blank" href='http://rru.ddns.net/'>API directory</a>
         <br/>
-        <a target="_blank" href='https://github.com/rrpie/rru'>The github for this</a>
+        <a target="_blank" href='https://github.com/rpiedev/rru'>The github for this</a>
         <br/>
       <p>My friend wrote the bash script that retrieves the temps and writes it to a json</p>
     </div>

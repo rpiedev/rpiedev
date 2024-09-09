@@ -54,7 +54,7 @@ export default function Calculator({initialAns}) {
             hence "your calc". It didn't end up being that, I just became too busy with school to 
             continue obsessing and just left it as a project into tokenizing and parsing.
         </p>
-        <p><a target="_blank" href='https://github.com/rrpie/yourcalc'>Github for this</a></p>
+        <p><a target="_blank" href='https://github.com/rpiedev/yourcalc'>Github for this</a></p>
         <hr/>
       <div className={styles.mainbox}>
           <table className={styles.history}>
